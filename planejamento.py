@@ -27,6 +27,7 @@ dict_posts1 = {
     "V_Confirma": V_Confirma1,
     "V_Explica": V_Explica1,
     "V_Indica": V_Indica1,
+    "V_ODS": Verus_ODS1
     }
 
 print(dict_posts1)
