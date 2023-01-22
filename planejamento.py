@@ -9,9 +9,7 @@ yy = 2023
 mm = 2
 
 print(calendar.month(yy, mm))
-
 '''
-
 
 def Ordena_dic(d): #<--Função para ordenar o dicionário original
     return dict(sorted(d.items(), key=lambda t:t[1]))
