@@ -39,14 +39,31 @@ print(Último_dia_do_mês)
 print(calendar.month(ano, mês))
 
 #0 = segunda, 1 = terça, 2 = quarta, 3 = quinta, 4 = sexta, 5 = sabádo, 6 = domingo
+dias_desejados_input = input('Insira os dias da semana de posts (separe com uma ","): ')
+
+# Transformando os dias em um array de string (que vai ser convertido pra número depois)
+dias_sejados_array = dias_desejados_input.split(',')
+
+# Passando por cada elemento da lista, transformando em números e adicioando
+# à uma nova lista que só vai ter números
+dias_desejados1 = []
+
+for elemento in dias_sejados_array:
+    dias_desejados_convertido_em_numero = int(elemento)
+
+    # adicionando o numero dos dias no array
+    dias_desejados1.append(dias_desejados_convertido_em_numero)
 
 #Loop for para ver quais dias do mês são do dia da semana sejados
 dia = 1
-dias_sejados = []
 dias_de_post = []
 for i in range(Último_dia_do_mês):
     dia_semana = calendar.weekday(ano, mês, dia)
+    if dia_semana in dias_desejados1:
+        dias_de_post.append(dia)
     dia += 1
+    
+print(dias_de_post)
     
 
 
