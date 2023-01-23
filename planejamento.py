@@ -8,7 +8,7 @@ print(calendar.month(ano, mês))
 dia_semana = calendar.weekday(ano, mês, 23)
 print(dia_semana)
 
-#0 = 
+#0 = segunda, 1 = terça, 2 = quarta, 3 = quinta, 4 = sexta, 5 = sabádo, 6 = domingo
 
 '''
 def Ordena_dic(d): #<--Função para ordenar o dicionário original
