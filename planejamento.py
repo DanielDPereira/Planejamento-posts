@@ -35,15 +35,19 @@ elif mês == 12:
     Último_dia_do_mês = 31
         
 print(Último_dia_do_mês)
-        
-    
+            
 print(calendar.month(ano, mês))
-dia_semana = calendar.weekday(ano, mês, 23)
+
+#Loop for para ver quais dias do mês são do dia da semana sejados
+dia = 1
+dias_de_post = []
+for i in range(Último_dia_do_mês):
+    dia_semana = calendar.weekday(ano, mês, dia)
+    
 
 #0 = segunda, 1 = terça, 2 = quarta, 3 = quinta, 4 = sexta, 5 = sabádo, 6 = domingo
 
-print(type(calendar.month(ano, mês)))
-print(calendar.month(ano, mês)[0])
+
 
 '''
 def Ordena_dic(d): #<--Função para ordenar o dicionário original
