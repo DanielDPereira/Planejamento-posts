@@ -1,16 +1,16 @@
 import calendar
 
-'''
 #Input do ano e do mês que se deseja gerar o calendário
 ano = int(input("Ano: "))
 mês = int(input("Mês: "))
 
-yy = 2023
-mm = 2
+print(calendar.month(ano, mês))
+dia_semana = calendar.weekday(ano, mês, 23)
+print(dia_semana)
 
-print(calendar.month(yy, mm))
+#0 = 
+
 '''
-
 def Ordena_dic(d): #<--Função para ordenar o dicionário original
     return dict(sorted(d.items(), key=lambda t:t[1]))
 
@@ -36,6 +36,7 @@ print(dict_posts1)
 dict_posts2 = Ordena_dic(dict_posts1)
 
 print(dict_posts2)
+'''
 
 #Só para não fechar no cmd
 input()
