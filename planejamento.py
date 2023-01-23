@@ -38,14 +38,17 @@ print(Último_dia_do_mês)
             
 print(calendar.month(ano, mês))
 
+#0 = segunda, 1 = terça, 2 = quarta, 3 = quinta, 4 = sexta, 5 = sabádo, 6 = domingo
+
 #Loop for para ver quais dias do mês são do dia da semana sejados
 dia = 1
+dias_sejados = []
 dias_de_post = []
 for i in range(Último_dia_do_mês):
     dia_semana = calendar.weekday(ano, mês, dia)
+    dia += 1
     
 
-#0 = segunda, 1 = terça, 2 = quarta, 3 = quinta, 4 = sexta, 5 = sabádo, 6 = domingo
 
 
 
