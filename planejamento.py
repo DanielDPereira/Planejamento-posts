@@ -4,11 +4,43 @@ import calendar
 ano = int(input("Ano: "))
 mês = int(input("Mês: "))
 
+Último_dia_do_mês = 0
+
+def Quantos_dias_tem_o_mês():
+    if mês == 1:
+        Último_dia_do_mês = 31
+    elif mês == 2:
+        Último_dia_do_mês = 28
+    elif mês == 3:
+        Último_dia_do_mês = 31
+    elif mês == 4:
+        Último_dia_do_mês = 30
+    elif mês == 5:
+        Último_dia_do_mês = 31
+    elif mês == 6:
+        Último_dia_do_mês = 30
+    elif mês == 7:
+        Último_dia_do_mês = 31
+    elif mês == 8:
+        Último_dia_do_mês = 31
+    elif mês == 9:
+        Último_dia_do_mês = 30
+    elif mês == 10:
+        Último_dia_do_mês = 31
+    elif mês == 11:
+        Último_dia_do_mês = 30
+    elif mês == 12:
+        Último_dia_do_mês = 31
+        
+Quantos_dias_tem_o_mês()
+    
 print(calendar.month(ano, mês))
 dia_semana = calendar.weekday(ano, mês, 23)
-print(dia_semana)
 
 #0 = segunda, 1 = terça, 2 = quarta, 3 = quinta, 4 = sexta, 5 = sabádo, 6 = domingo
+
+print(type(calendar.month(ano, mês)))
+print(calendar.month(ano, mês)[0])
 
 '''
 def Ordena_dic(d): #<--Função para ordenar o dicionário original
