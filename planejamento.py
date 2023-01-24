@@ -47,10 +47,6 @@ for i in range(Último_dia_do_mês):
     
 print(dias_de_post)
     
-
-
-
-
 '''
 def Ordena_dic(d): #<--Função para ordenar o dicionário original
     return dict(sorted(d.items(), key=lambda t:t[1]))
