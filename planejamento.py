@@ -6,7 +6,7 @@ mês = int(input("Mês: "))
 
 Último_dia_do_mês = 0
     
-if mês == 1:
+if mês == 1 or 3 or 5 or 7 or 8 or 10 or 12:
     Último_dia_do_mês = 31
 elif mês == 2:
     if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
