@@ -15,12 +15,6 @@ elif mês == 2:
         Último_dia_do_mês = 28
 elif mês == 4 or 6 or 9 or 11:
     Último_dia_do_mês = 30
-elif mês == 6:
-    Último_dia_do_mês = 30
-elif mês == 9:
-    Último_dia_do_mês = 30
-elif mês == 11:
-    Último_dia_do_mês = 30
       
 print(Último_dia_do_mês)
             
