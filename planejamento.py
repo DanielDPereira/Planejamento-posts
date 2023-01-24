@@ -46,6 +46,10 @@ for i in range(Último_dia_do_mês):
     dia += 1
     
 print(dias_de_post)
+for i in dias_de_post:
+    print(str(i) + "/"+str(mês))
+    
+Tipos_de_post = ["Explica", "Confirma", "Alerta", "ODS", "Indica"]
     
 '''
 def Ordena_dic(d): #<--Função para ordenar o dicionário original
