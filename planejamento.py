@@ -47,7 +47,17 @@ for i in range(Último_dia_do_mês):
     
 print(dias_de_post)
 for i in dias_de_post:
-    print(str(i) + "/"+str(mês))
+    if mês < 10:
+        if i < 10:
+            print("0"+str(i) + "/"+"0"+str(mês))
+        else:
+            print(str(i) + "/"+"0"+str(mês))
+    else:
+        if i < 10:
+            print("0"+str(i) + "/"+str(mês))
+        else:
+            print(str(i) + "/"+str(mês))
+        
     
 Tipos_de_post = ["Explica", "Confirma", "Alerta", "ODS", "Indica"]
     
