@@ -46,6 +46,7 @@ for i in range(Último_dia_do_mês):
     dia += 1
     
 print(dias_de_post)
+
 for i in dias_de_post:
     if mês < 10:
         if i < 10:
