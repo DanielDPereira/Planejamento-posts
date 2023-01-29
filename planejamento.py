@@ -67,20 +67,25 @@ print(dias_de_post)
 
 #Post do dia
 Tipos_de_post = ["Explica", "Confirma", "Alerta", "ODS", "Indica", "Vídeo"]
-
+contador_de_post_para_cada_dia = 0
 
 #Print dos dias que terão post
 for i in dias_de_post:
+    
     if mês < 10:
         if i < 10:
-            print("0"+str(i) + "/"+"0"+str(mês))
+            print("0"+str(i) + "/"+"0"+str(mês)+" "+Tipos_de_post[contador_de_post_para_cada_dia])
         else:
-            print(str(i) + "/"+"0"+str(mês))
+            print(str(i) + "/"+"0"+str(mês)+" "+Tipos_de_post[contador_de_post_para_cada_dia])
     else:
         if i < 10:
-            print("0"+str(i) + "/"+str(mês))
+            print("0"+str(i) + "/"+str(mês)+" "+Tipos_de_post[contador_de_post_para_cada_dia])
         else:
-            print(str(i) + "/"+str(mês))
+            print(str(i) + "/"+str(mês)+" "+Tipos_de_post[contador_de_post_para_cada_dia])
+            
+    contador_de_post_para_cada_dia += 1
+    if contador_de_post_para_cada_dia > 5:
+        contador_de_post_para_cada_dia = 0
            
 '''
 def Ordena_dic(d): #<--Função para ordenar o dicionário original
