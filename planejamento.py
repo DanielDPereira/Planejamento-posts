@@ -69,7 +69,7 @@ print(dias_de_post)
 Tipos_de_post = ["Explica", "Confirma", "Alerta", "ODS", "Indica", "Vídeo"]
 contador_de_post_para_cada_dia = 0
 
-#Print dos dias que terão post
+#Print dos dias que terão post e o tipo
 for i in dias_de_post:
     
     if mês < 10:
