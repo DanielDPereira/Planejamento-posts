@@ -6,15 +6,33 @@ mês = int(input("Mês: "))
 
 Último_dia_do_mês = 0
     
-if mês == 1 or 3 or 5 or 7 or 8 or 10 or 12:
+if mês == 1:
     Último_dia_do_mês = 31
 elif mês == 2:
     if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
         Último_dia_do_mês = 29
     else:
         Último_dia_do_mês = 28
-elif mês == 4 or 6 or 9 or 11:
+elif mês == 3:
+    Último_dia_do_mês = 31
+elif mês == 4:
     Último_dia_do_mês = 30
+elif mês == 5:
+    Último_dia_do_mês = 31
+elif mês == 6:
+    Último_dia_do_mês = 30
+elif mês == 7:
+    Último_dia_do_mês = 31
+elif mês == 8:
+    Último_dia_do_mês = 31
+elif mês == 9:
+    Último_dia_do_mês = 30
+elif mês == 10:
+    Último_dia_do_mês = 31
+elif mês == 11:
+    Último_dia_do_mês = 30
+elif mês == 12:
+    Último_dia_do_mês = 31
       
 print(Último_dia_do_mês)
             
