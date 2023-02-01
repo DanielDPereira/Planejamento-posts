@@ -38,7 +38,7 @@ print(Último_dia_do_mês)
             
 print(calendar.month(ano, mês))
 
-#0 = segunda, 1 = terça, 2 = quarta, 3 = quinta, 4 = sexta, 5 = sabádo, 6 = domingo
+#Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6
 dias_desejados_input = input('Insira os dias da semana de posts (separe com uma ","): ')
 
 # Transformando os dias em um array de string (que vai ser convertido pra número depois)
