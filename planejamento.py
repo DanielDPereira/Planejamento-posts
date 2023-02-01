@@ -72,6 +72,9 @@ Tipos_de_post = ["Explica", "Confirma", "Alerta", "ODS", "Indica", "Vídeo"]
 
 contador_de_post_para_cada_dia = int(input("Último post: ")) + 1
 
+if contador_de_post_para_cada_dia >= 5:
+    contador_de_post_para_cada_dia = 0
+
 #Print dos dias que terão post e o tipo
 for i in dias_de_post:
     
@@ -87,7 +90,7 @@ for i in dias_de_post:
             print(str(i) + "/"+str(mês)+" "+Tipos_de_post[contador_de_post_para_cada_dia])
             
     contador_de_post_para_cada_dia += 1
-    if contador_de_post_para_cada_dia > 5:
+    if contador_de_post_para_cada_dia > len(Tipos_de_post):
         contador_de_post_para_cada_dia = 0
            
 '''
