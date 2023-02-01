@@ -69,7 +69,8 @@ print(dias_de_post)
 
 #Explica = 0, Confirma = 1, Alerta = 2, ODS = 3, Indica = 4, Vídeo = 5
 Tipos_de_post = ["Explica", "Confirma", "Alerta", "ODS", "Indica", "Vídeo"]
-contador_de_post_para_cada_dia = 0
+
+contador_de_post_para_cada_dia = int(input("Último post: ")) + 1
 
 #Print dos dias que terão post e o tipo
 for i in dias_de_post:
