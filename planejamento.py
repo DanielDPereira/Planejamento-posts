@@ -40,11 +40,15 @@ print(Último_dia_do_mês)
 print(calendar.month(ano, mês))
 ''' 
 
+print("Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6")
+
 #Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6
 dias_desejados_input = input('Insira os dias da semana de posts (separe com uma ","): ')
 
 # Transformando os dias em um array de string (que vai ser convertido pra número depois)
 dias_sejados_array = dias_desejados_input.split(',')
+
+dia_vídeo = int(input("Dia da semana onde será postado vídeo: "))
 
 # Passando por cada elemento da lista, transformando em números e adicioando
 # à uma nova lista que só vai ter números
@@ -70,6 +74,8 @@ print(dias_de_post)
 '''
 
 #Post do dia
+
+print("Explica = 0, Confirma = 1, Alerta = 2, ODS = 3, Indica = 4, Vídeo = 5")
 
 #Explica = 0, Confirma = 1, Alerta = 2, ODS = 3, Indica = 4, Vídeo = 5
 Tipos_de_post = ["Explica", "Confirma", "Alerta", "ODS", "Indica", "Vídeo"]
