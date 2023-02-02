@@ -59,9 +59,7 @@ for elemento in dias_desejados_array:
 
     # adicionando o numero dos dias no array
     dias_desejados1.append(dias_desejados_convertido_em_numero)
-    
-dias_desejados1.remove(dia_vídeo)
-    
+        
 #Loop for para ver quais dias do mês são do dia da semana sejados
 dia = 1
 dias_de_post = []
@@ -93,6 +91,8 @@ print("Explica = 0, Confirma = 1, Alerta = 2, ODS = 3, Indica = 4, Vídeo = 5")
 #Explica = 0, Confirma = 1, Alerta = 2, ODS = 3, Indica = 4, Vídeo = 5
 Tipos_de_post = ["Explica", "Confirma", "Alerta", "ODS", "Indica", "Vídeo"]
 
+Tipos_de_post_sem_vídeo = ["Explica", "Confirma", "Alerta", "ODS", "Indica"]
+
 contador_de_post_para_cada_dia = int(input("Tipo do último post: ")) + 1
 
 if contador_de_post_para_cada_dia >= len(Tipos_de_post):
@@ -101,19 +101,33 @@ if contador_de_post_para_cada_dia >= len(Tipos_de_post):
 #Print dos dias que terão post e o tipo
 for i in dias_de_post:
     
-    if mês < 10:
-        if i < 10:
-            print("0"+str(i) + "/"+"0"+str(mês)+" "+Tipos_de_post[contador_de_post_para_cada_dia])
+    if i in dias_de_post_vídeo:
+            
+        if mês < 10:
+            if i < 10:
+                print("0"+str(i) + "/"+"0"+str(mês)+" Vídeo")
+            else:
+                print(str(i) + "/"+"0"+str(mês)+" Vídeo")
         else:
-            print(str(i) + "/"+"0"+str(mês)+" "+Tipos_de_post[contador_de_post_para_cada_dia])
-    else:
-        if i < 10:
-            print("0"+str(i) + "/"+str(mês)+" "+Tipos_de_post[contador_de_post_para_cada_dia])
+            if i < 10:
+                print("0"+str(i) + "/"+str(mês)+" Vídeo")
+            else:
+                print(str(i) + "/"+str(mês)+" Vídeo")
+    else:        
+    
+        if mês < 10:
+            if i < 10:
+                print("0"+str(i) + "/"+"0"+str(mês)+" "+Tipos_de_post_sem_vídeo[contador_de_post_para_cada_dia])
+            else:
+                print(str(i) + "/"+"0"+str(mês)+" "+Tipos_de_post_sem_vídeo[contador_de_post_para_cada_dia])
         else:
-            print(str(i) + "/"+str(mês)+" "+Tipos_de_post[contador_de_post_para_cada_dia])
+            if i < 10:
+                print("0"+str(i) + "/"+str(mês)+" "+Tipos_de_post_sem_vídeo[contador_de_post_para_cada_dia])
+            else:
+                print(str(i) + "/"+str(mês)+" "+Tipos_de_post_sem_vídeo[contador_de_post_para_cada_dia])
             
     contador_de_post_para_cada_dia += 1
-    if contador_de_post_para_cada_dia >= len(Tipos_de_post):
+    if contador_de_post_para_cada_dia >= len(Tipos_de_post_sem_vídeo):
         contador_de_post_para_cada_dia = 0
            
 '''
