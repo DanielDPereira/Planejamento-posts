@@ -60,6 +60,8 @@ for elemento in dias_desejados_array:
     # adicionando o numero dos dias no array
     dias_desejados1.append(dias_desejados_convertido_em_numero)
     
+dias_desejados1.remove(dia_vídeo)
+    
 #Loop for para ver quais dias do mês são do dia da semana sejados
 dia = 1
 dias_de_post = []
@@ -68,7 +70,16 @@ for i in range(Último_dia_do_mês):
     if dia_semana in dias_desejados1:
         dias_de_post.append(dia)
     dia += 1
-    
+
+#Loop for para selecionar os dias que deverão ter vídeos
+dia = 1
+dias_de_post = []
+for i in range(Último_dia_do_mês):
+    dia_semana = calendar.weekday(ano, mês, dia)
+    if dia_semana in dias_desejados1:
+        dias_de_post.append(dia)
+    dia += 1
+        
 '''    
 print(dias_de_post)
 '''
