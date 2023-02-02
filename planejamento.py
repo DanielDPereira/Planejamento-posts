@@ -34,12 +34,6 @@ elif mês == 11:
 elif mês == 12:
     Último_dia_do_mês = 31
 
-'''     
-print(Último_dia_do_mês)
-            
-print(calendar.month(ano, mês))
-''' 
-
 print("Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6")
 
 #Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6
@@ -77,12 +71,6 @@ for i in range(Último_dia_do_mês):
     if dia_semana == 4:
         dias_de_post_vídeo.append(dia)
     dia += 1
-    
-print(dias_de_post_vídeo)
-        
-'''    
-print(dias_de_post)
-'''
 
 #Post do dia
 
