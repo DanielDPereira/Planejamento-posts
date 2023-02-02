@@ -46,7 +46,7 @@ print("Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, 
 dias_desejados_input = input('Insira os dias da semana de posts (separe com uma ","): ')
 
 # Transformando os dias em um array de string (que vai ser convertido pra número depois)
-dias_sejados_array = dias_desejados_input.split(',')
+dias_desejados_array = dias_desejados_input.split(',')
 
 dia_vídeo = int(input("Dia da semana onde será postado vídeo: "))
 
@@ -54,12 +54,12 @@ dia_vídeo = int(input("Dia da semana onde será postado vídeo: "))
 # à uma nova lista que só vai ter números
 dias_desejados1 = []
 
-for elemento in dias_sejados_array:
+for elemento in dias_desejados_array:
     dias_desejados_convertido_em_numero = int(elemento)
 
     # adicionando o numero dos dias no array
     dias_desejados1.append(dias_desejados_convertido_em_numero)
-
+    
 #Loop for para ver quais dias do mês são do dia da semana sejados
 dia = 1
 dias_de_post = []
