@@ -33,10 +33,12 @@ elif mês == 11:
     Último_dia_do_mês = 30
 elif mês == 12:
     Último_dia_do_mês = 31
-      
+
+'''     
 print(Último_dia_do_mês)
             
 print(calendar.month(ano, mês))
+''' 
 
 #Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6
 dias_desejados_input = input('Insira os dias da semana de posts (separe com uma ","): ')
