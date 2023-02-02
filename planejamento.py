@@ -65,7 +65,9 @@ for i in range(Último_dia_do_mês):
         dias_de_post.append(dia)
     dia += 1
     
+'''    
 print(dias_de_post)
+'''
 
 #Post do dia
 
