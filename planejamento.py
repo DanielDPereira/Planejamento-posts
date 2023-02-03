@@ -68,7 +68,7 @@ dia = 1
 dias_de_post_vídeo = []
 for i in range(Último_dia_do_mês):
     dia_semana = calendar.weekday(ano, mês, dia)
-    if dia_semana == 4:
+    if dia_semana == dia_vídeo:
         dias_de_post_vídeo.append(dia)
     dia += 1
 
