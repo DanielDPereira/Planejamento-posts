@@ -42,7 +42,7 @@ dias_desejados_input = input('Insira os dias da semana de posts (separe com uma 
 # Transformando os dias em um array de string (que vai ser convertido pra número depois)
 dias_desejados_array = dias_desejados_input.split(',')
 
-dia_vídeo_input = str(input("Dia da semana onde será postado vídeo: "))
+dia_vídeo_input = str(input("Dias da semana onde serão postados vídeos: "))
 
 # Passando por cada elemento da lista, transformando em números e adicioando
 # à uma nova lista que só vai ter números
