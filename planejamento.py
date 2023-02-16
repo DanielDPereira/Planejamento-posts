@@ -42,7 +42,7 @@ dias_desejados_input = input('Insira os dias da semana de posts (separe com uma 
 # Transformando os dias em um array de string (que vai ser convertido pra número depois)
 dias_desejados_array = dias_desejados_input.split(',')
 
-dia_vídeo = int(input("Dia da semana onde será postado vídeo: "))
+dia_vídeo_input = str(input("Dia da semana onde será postado vídeo: "))
 
 # Passando por cada elemento da lista, transformando em números e adicioando
 # à uma nova lista que só vai ter números
@@ -62,13 +62,25 @@ for i in range(Último_dia_do_mês):
     if dia_semana in dias_desejados1:
         dias_de_post.append(dia)
     dia += 1
+    
+#Tranformando dias de vídeos de string para int
+
+dias_desejados_vídeo_array = dia_vídeo_input.split(',')
+
+dias_desejados_vídeo1 = []
+
+for elemento in dias_desejados_vídeo_array:
+    dias_desejados_vídeo_convertido_em_numero = int(elemento)
+
+    # adicionando o numero dos dias no array
+    dias_desejados_vídeo1.append(dias_desejados_vídeo_convertido_em_numero)
 
 #Loop for para selecionar os dias que deverão ter vídeos
 dia = 1
 dias_de_post_vídeo = []
 for i in range(Último_dia_do_mês):
     dia_semana = calendar.weekday(ano, mês, dia)
-    if dia_semana == dia_vídeo:
+    if dia_semana in dias_desejados_vídeo1:
         dias_de_post_vídeo.append(dia)
     dia += 1
 
