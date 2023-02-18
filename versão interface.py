@@ -3,7 +3,7 @@ import PySimpleGUI as sg
 sg.theme('DarkPurple1')   # Add a touch of color
 # All the stuff inside your wi
 # ndow.
-layout = [  [sg.Text('Relatório Instagram')],
+layout = [  [sg.Text('Planejamento posts')],
             [sg.Text('Insira o nome do relatório:')],
             [sg.InputText()],
             [sg.Text('Insira a quantidade de seguidores:')],
