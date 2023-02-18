@@ -23,5 +23,5 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
         break
     
-ano = values[0]
-mês = values[1]
+ano = int(values[0])
+mês = int(values[1])
