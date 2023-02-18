@@ -4,9 +4,9 @@ sg.theme('DarkPurple1')   # Add a touch of color
 # All the stuff inside your wi
 # ndow.
 layout = [  [sg.Text('Planejamento posts')],
-            [sg.Text('Insira o nome do relatório:')],
+            [sg.Text('Ano:')],
             [sg.InputText()],
-            [sg.Text('Insira a quantidade de seguidores:')],
+            [sg.Text('Mês:')],
             [sg.InputText()],
             [sg.Text('Insira os likes dos posts: (separe com uma ",")')],
             [sg.InputText()],
