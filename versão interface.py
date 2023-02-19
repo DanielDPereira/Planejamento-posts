@@ -60,3 +60,9 @@ dias_desejados_input = values[2]
 
 # Transformando os dias em um array de string (que vai ser convertido pra número depois)
 dias_desejados_array = dias_desejados_input.split(',')
+
+dia_vídeo_input = values[3]
+
+# Passando por cada elemento da lista, transformando em números e adicioando
+# à uma nova lista que só vai ter números
+dias_desejados1 = []
