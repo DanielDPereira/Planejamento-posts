@@ -14,6 +14,7 @@ layout = [  [sg.Text('Planejamento posts')],
             [sg.InputText()],
             [sg.Text('Dias da semana onde serão postados vídeos: ')],
             [sg.InputText()],
+            [sg.Text('Tipo do último post: '],
             [sg.Button('Ok'), sg.Button('Cancel')] ]
 
 # Create the Window
