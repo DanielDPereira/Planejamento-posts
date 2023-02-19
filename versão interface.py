@@ -117,3 +117,38 @@ contador_de_post_para_cada_dia = int(values[4]) + 1
 
 if contador_de_post_para_cada_dia >= len(Tipos_de_post):
     contador_de_post_para_cada_dia = 0
+    
+#Print dos dias que terão post e o tipo
+for i in dias_de_post:
+    
+    if i in dias_de_post_vídeo:
+            
+        if mês < 10:
+            if i < 10:
+                print("0"+str(i) + "/"+"0"+str(mês)+" Vídeo")
+            else:
+                print(str(i) + "/"+"0"+str(mês)+" Vídeo")
+        else:
+            if i < 10:
+                print("0"+str(i) + "/"+str(mês)+" Vídeo")
+            else:
+                print(str(i) + "/"+str(mês)+" Vídeo")
+    else:        
+    
+        if mês < 10:
+            if i < 10:
+                print("0"+str(i) + "/"+"0"+str(mês)+" "+Tipos_de_post_sem_vídeo[contador_de_post_para_cada_dia])
+            else:
+                print(str(i) + "/"+"0"+str(mês)+" "+Tipos_de_post_sem_vídeo[contador_de_post_para_cada_dia])
+        else:
+            if i < 10:
+                print("0"+str(i) + "/"+str(mês)+" "+Tipos_de_post_sem_vídeo[contador_de_post_para_cada_dia])
+            else:
+                print(str(i) + "/"+str(mês)+" "+Tipos_de_post_sem_vídeo[contador_de_post_para_cada_dia])
+            
+    contador_de_post_para_cada_dia += 1
+    if contador_de_post_para_cada_dia >= len(Tipos_de_post_sem_vídeo):
+        contador_de_post_para_cada_dia = 0
+
+#Só para não fechar no cmd
+input()
