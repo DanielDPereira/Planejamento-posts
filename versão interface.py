@@ -55,3 +55,8 @@ elif mês == 11:
     Último_dia_do_mês = 30
 elif mês == 12:
     Último_dia_do_mês = 31
+
+dias_desejados_input = values[2]
+
+# Transformando os dias em um array de string (que vai ser convertido pra número depois)
+dias_desejados_array = dias_desejados_input.split(',')
