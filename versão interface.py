@@ -103,3 +103,17 @@ for i in range(Último_dia_do_mês):
     if dia_semana in dias_desejados_vídeo1:
         dias_de_post_vídeo.append(dia)
     dia += 1
+    
+#Post do dia
+
+print("Explica = 0, Confirma = 1, Alerta = 2, ODS = 3, Indica = 4, Vídeo = 5")
+
+#Explica = 0, Confirma = 1, Alerta = 2, ODS = 3, Indica = 4, Vídeo = 5
+Tipos_de_post = ["Explica", "Confirma", "Alerta", "ODS", "Indica", "Vídeo"]
+
+Tipos_de_post_sem_vídeo = ["Explica", "Confirma", "Alerta", "ODS", "Indica"]
+
+contador_de_post_para_cada_dia = int(values[4]) + 1
+
+if contador_de_post_para_cada_dia >= len(Tipos_de_post):
+    contador_de_post_para_cada_dia = 0
