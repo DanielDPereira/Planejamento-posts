@@ -14,9 +14,10 @@ layout = [  [sg.Text('Planejamento posts')],
             [sg.InputText()],
             [sg.Text('Dias da semana onde serão postados vídeos: ')],
             [sg.InputText()],
+            [sg.Text('Explica = 0, Confirma = 1, Alerta = 2, ODS = 3, Indica = 4, Vídeo = 5'],
             [sg.Text('Tipo do último post: '],
             [sg.InputText()],
-            [sg.Button('Ok'), sg.Button('Cancel')] ]
+            [sg.Button('Ok'), sg.Button('Cancel')] ]    
 
 # Create the Window
 window = sg.Window('Relatório', layout)
