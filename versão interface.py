@@ -123,7 +123,7 @@ while True:
         
     #Print dos dias que terão post e o tipo
     
-    print("Planejamento de posts do mês "+str(mês)+" de "+str(ano)+"\n")
+    print("Planejamento de posts do mês "+str(mês)+" de "+str(ano)+":\n")
     
     for i in dias_de_post:
         
