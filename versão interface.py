@@ -122,6 +122,9 @@ while True:
         contador_de_post_para_cada_dia = 0
         
     #Print dos dias que terão post e o tipo
+    
+    print("Planejamento de posts")
+    
     for i in dias_de_post:
         
         if i in dias_de_post_vídeo:
