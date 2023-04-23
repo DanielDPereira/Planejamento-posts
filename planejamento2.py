@@ -46,6 +46,15 @@ for i in range(Último_dia_do_mês):
     if dia_semana == 0:
         dias_de_post_DanielDias.append(dia)
     dia += 1
+    
+#Loop Gabriel Espildora
+dia = 1
+dias_de_post_GabrielEspildora = []
+for i in range(Último_dia_do_mês):
+    dia_semana = calendar.weekday(ano, mês, dia)
+    if dia_semana == 1:
+        dias_de_post_GabrielEspildora.append(dia)
+    dia += 1
 
 print(dias_de_post)
 print(dias_de_post_DanielDias)    
