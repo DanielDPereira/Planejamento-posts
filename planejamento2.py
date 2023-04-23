@@ -17,11 +17,15 @@ elif mês == 4 or mês == 6 or mês == 9 or mês == 11:
 
 #Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6
 
+'''
+Cronograma de postagens
+
 #Segunda - ODS ou Confirma - Daniel Dias
 #Terça - Explica - Gabriel Espildora
 #Quarta - Explica ou Alerta - Anny
 #Quinta - Explica - Daniel Sega
 #Sexta - Indica ou Entrevista - Gabriella
+'''
 
 dias_de_post_semana = [0,1,2,3,4]
 
