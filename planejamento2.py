@@ -12,11 +12,5 @@ elif mês == 2:
         Último_dia_do_mês = 29
     else:
         Último_dia_do_mês = 28
-elif mês == 4:
-    Último_dia_do_mês = 30
-elif mês == 6:
-    Último_dia_do_mês = 30
-elif mês == 9:
-    Último_dia_do_mês = 30
-elif mês == 11:
+elif mês == 4 or mês == 6 or mês == 9 or mês == 11:
     Último_dia_do_mês = 30
