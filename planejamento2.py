@@ -20,11 +20,11 @@ elif mês == 4 or mês == 6 or mês == 9 or mês == 11:
 '''
 Cronograma de postagens
 
-#Segunda - ODS ou Confirma - Daniel Dias
-#Terça - Explica - Gabriel Espildora
-#Quarta - Explica ou Alerta - Anny
-#Quinta - Explica - Daniel Sega
-#Sexta - Indica ou Entrevista - Gabriella
+Segunda - ODS ou Confirma - Daniel Dias
+Terça - Explica - Gabriel Espildora
+Quarta - Explica ou Alerta - Anny
+Quinta - Explica - Daniel Sega
+Sexta - Indica ou Entrevista - Gabriella
 '''
 
 dias_de_post_semana = [0,1,2,3,4]
