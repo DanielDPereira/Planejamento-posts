@@ -14,14 +14,6 @@ layout = [  [sg.Text('Planejamento posts')],
             [sg.InputText()],
             [sg.Text('Mês:')],
             [sg.InputText()],
-            [sg.Text('Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6')],
-            [sg.Text('Insira os dias da semana de posts (separe com uma ","): ')],
-            [sg.InputText()],
-            [sg.Text('Dias da semana onde serão postados vídeos: ')],
-            [sg.InputText()],
-            [sg.Text('Explica = 0, Confirma = 1, Alerta = 2, ODS = 3, Indica = 4, Vídeo = 5')],
-            [sg.Text('Tipo do último post: ')],
-            [sg.InputText()],
             [sg.Button('Ok'), sg.Button('Cancel')] ]    
 
 # Create the Window
