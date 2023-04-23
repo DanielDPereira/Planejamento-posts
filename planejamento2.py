@@ -1,9 +1,11 @@
 import calendar
 import PySimpleGUI as sg
 
+'''
 #Input do ano e do mês que se deseja gerar o calendário
 ano = int(input("Ano: "))
 mês = int(input("Mês: "))
+'''
 
 #As linhas seguintes devem servir para gerar a interface gráfica do programa
 sg.theme('DarkTeal2')   # Add a touch of color
