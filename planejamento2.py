@@ -5,8 +5,8 @@ import PySimpleGUI as sg
 ano = int(input("Ano: "))
 mês = int(input("Mês: "))
 
-'''#As linhas seguintes devem servir para gerar a interface gráfica do programa
-sg.theme('DarkPurple1')   # Add a touch of color
+#As linhas seguintes devem servir para gerar a interface gráfica do programa
+sg.theme('DarkTeal2')   # Add a touch of color
 # All the stuff inside your wi
 # ndow.
 layout = [  [sg.Text('Planejamento posts')],
@@ -23,85 +23,87 @@ while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
         break
-'''
 
-if mês == 1 or mês == 3 or mês == 5 or mês == 7 or mês == 8 or mês == 10 or mês == 12:
-    Último_dia_do_mês = 31
-elif mês == 2:
-    if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
-        Último_dia_do_mês = 29
-    else:
-        Último_dia_do_mês = 28
-elif mês == 4 or mês == 6 or mês == 9 or mês == 11:
-    Último_dia_do_mês = 30
+    ano = int(values[0])
+    mês = int(values[1])
 
-#Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6
+    if mês == 1 or mês == 3 or mês == 5 or mês == 7 or mês == 8 or mês == 10 or mês == 12:
+        Último_dia_do_mês = 31
+    elif mês == 2:
+        if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
+            Último_dia_do_mês = 29
+        else:
+            Último_dia_do_mês = 28
+    elif mês == 4 or mês == 6 or mês == 9 or mês == 11:
+        Último_dia_do_mês = 30
 
-'''
-Cronograma de postagens
+    #Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6
 
-Segunda - ODS ou Confirma - Daniel Dias
-Terça - Explica - Gabriel Espildora
-Quarta - Explica ou Alerta - Anny
-Quinta - Explica - Daniel Sega
-Sexta - Indica ou Entrevista - Gabriella
-'''
+    '''
+    Cronograma de postagens
 
-dias_de_post_semana = [0,1,2,3,4]
+    Segunda - ODS ou Confirma - Daniel Dias
+    Terça - Explica - Gabriel Espildora
+    Quarta - Explica ou Alerta - Anny
+    Quinta - Explica - Daniel Sega
+    Sexta - Indica ou Entrevista - Gabriella
+    '''
 
-#Loop for para ver quais dias do mês terão posts
-dia = 1
-dias_de_post = []
-for i in range(Último_dia_do_mês):
-    dia_semana = calendar.weekday(ano, mês, dia)
-    if dia_semana in dias_de_post_semana:
-        dias_de_post.append(dia)
-    dia += 1
-    
-#Loop Daniel Dias
-dia = 1
-dias_de_post_DanielDias = []
-for i in range(Último_dia_do_mês):
-    dia_semana = calendar.weekday(ano, mês, dia)
-    if dia_semana == 0:
-        dias_de_post_DanielDias.append(dia)
-    dia += 1
-    
-#Loop Gabriel Espildora
-dia = 1
-dias_de_post_GabrielEspildora = []
-for i in range(Último_dia_do_mês):
-    dia_semana = calendar.weekday(ano, mês, dia)
-    if dia_semana == 1:
-        dias_de_post_GabrielEspildora.append(dia)
-    dia += 1
-    
-#Loop Anny
-dia = 1
-dias_de_post_Anny = []
-for i in range(Último_dia_do_mês):
-    dia_semana = calendar.weekday(ano, mês, dia)
-    if dia_semana == 2:
-        dias_de_post_Anny.append(dia)
-    dia += 1
-    
-#Loop Daniel Sega
-dia = 1
-dias_de_post_DanielSega = []
-for i in range(Último_dia_do_mês):
-    dia_semana = calendar.weekday(ano, mês, dia)
-    if dia_semana == 3:
-        dias_de_post_DanielSega.append(dia)
-    dia += 1
+    dias_de_post_semana = [0,1,2,3,4]
 
-#Loop Gabriella
-dia = 1
-dias_de_post_Gabriella = []
-for i in range(Último_dia_do_mês):
-    dia_semana = calendar.weekday(ano, mês, dia)
-    if dia_semana == 4:
-        dias_de_post_Gabriella.append(dia)
-    dia += 1
+    #Loop for para ver quais dias do mês terão posts
+    dia = 1
+    dias_de_post = []
+    for i in range(Último_dia_do_mês):
+        dia_semana = calendar.weekday(ano, mês, dia)
+        if dia_semana in dias_de_post_semana:
+            dias_de_post.append(dia)
+        dia += 1
+        
+    #Loop Daniel Dias
+    dia = 1
+    dias_de_post_DanielDias = []
+    for i in range(Último_dia_do_mês):
+        dia_semana = calendar.weekday(ano, mês, dia)
+        if dia_semana == 0:
+            dias_de_post_DanielDias.append(dia)
+        dia += 1
+        
+    #Loop Gabriel Espildora
+    dia = 1
+    dias_de_post_GabrielEspildora = []
+    for i in range(Último_dia_do_mês):
+        dia_semana = calendar.weekday(ano, mês, dia)
+        if dia_semana == 1:
+            dias_de_post_GabrielEspildora.append(dia)
+        dia += 1
+        
+    #Loop Anny
+    dia = 1
+    dias_de_post_Anny = []
+    for i in range(Último_dia_do_mês):
+        dia_semana = calendar.weekday(ano, mês, dia)
+        if dia_semana == 2:
+            dias_de_post_Anny.append(dia)
+        dia += 1
+        
+    #Loop Daniel Sega
+    dia = 1
+    dias_de_post_DanielSega = []
+    for i in range(Último_dia_do_mês):
+        dia_semana = calendar.weekday(ano, mês, dia)
+        if dia_semana == 3:
+            dias_de_post_DanielSega.append(dia)
+        dia += 1
 
-print(dias_de_post)
+    #Loop Gabriella
+    dia = 1
+    dias_de_post_Gabriella = []
+    for i in range(Último_dia_do_mês):
+        dia_semana = calendar.weekday(ano, mês, dia)
+        if dia_semana == 4:
+            dias_de_post_Gabriella.append(dia)
+        dia += 1
+
+    print(dias_de_post)
       
