@@ -37,5 +37,15 @@ for i in range(Último_dia_do_mês):
     if dia_semana in dias_de_post_semana:
         dias_de_post.append(dia)
     dia += 1
+    
+#Loop Daniel Dias
+dia = 1
+dias_de_post_DanielDias = []
+for i in range(Último_dia_do_mês):
+    dia_semana = calendar.weekday(ano, mês, dia)
+    if dia_semana == 0:
+        dias_de_post_DanielDias.append(dia)
+    dia += 1
 
-print(dias_de_post)    
+print(dias_de_post)
+print(dias_de_post_DanielDias)    
