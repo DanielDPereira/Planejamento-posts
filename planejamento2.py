@@ -16,6 +16,7 @@ elif mês == 4 or mês == 6 or mês == 9 or mês == 11:
     Último_dia_do_mês = 30
 
 #Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6
+
 #Segunda - ODS ou Confirma - Daniel Dias
 #Terça - Explica - Gabriel Espildora
 #Quarta - Explica ou Alerta - Anny
