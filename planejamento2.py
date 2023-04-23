@@ -16,4 +16,16 @@ elif mês == 4 or mês == 6 or mês == 9 or mês == 11:
     Último_dia_do_mês = 30
 
 #Segunda = 0, Terça = 1, Quarta = 2, Quinta = 3, Sexta = 4, Sabádo = 5, Domingo = 6
-    
+
+dias_de_post_semana = [0,1,2,3,4]
+
+#Loop for para ver quais dias do mês terão posts
+dia = 1
+dias_de_post = []
+for i in range(Último_dia_do_mês):
+    dia_semana = calendar.weekday(ano, mês, dia)
+    if dia_semana in dias_de_post_semana:
+        dias_de_post.append(dia)
+    dia += 1
+
+print(dias_de_post)    
