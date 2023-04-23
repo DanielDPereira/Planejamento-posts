@@ -5,7 +5,7 @@ import PySimpleGUI as sg
 ano = int(input("Ano: "))
 mês = int(input("Mês: "))
 
-'''
+'''#As linhas seguintes devem servir para gerar a interface gráfica do programa
 sg.theme('DarkPurple1')   # Add a touch of color
 # All the stuff inside your wi
 # ndow.
@@ -32,6 +32,7 @@ while True:
     if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
         break
 '''
+
 if mês == 1 or mês == 3 or mês == 5 or mês == 7 or mês == 8 or mês == 10 or mês == 12:
     Último_dia_do_mês = 31
 elif mês == 2:
