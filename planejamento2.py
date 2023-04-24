@@ -106,6 +106,15 @@ while True:
         if dia_semana == 4:
             dias_de_post_Gabriella.append(dia)
         dia += 1
+        
+    print(dias_de_post_DanielDias)
+    print(dias_de_post_GabrielEspildora)
+    print(dias_de_post_Anny)
+    print(dias_de_post_DanielSega)
+    print(dias_de_post_Gabriella)
+
+    for i in range(len(dias_de_post)+1):
+        print()
 
     print(dias_de_post)
       
