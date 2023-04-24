@@ -44,9 +44,9 @@ while True:
     '''
     Cronograma de postagens
 
-    Segunda - ODS ou Confirma - Daniel Dias
+    Segunda - ODS ou Confirma - Daniel Dias - S1 e S3 ODS, S2 e S4 Confirma
     Terça - Explica - Gabriel Espildora
-    Quarta - Explica ou Alerta - Anny
+    Quarta - Explica ou Alerta - Anny - S1 e S3 Explica, S2 e S4 Alerta
     Quinta - Explica - Daniel Sega
     Sexta - Indica ou Entrevista - Gabriella
     '''
