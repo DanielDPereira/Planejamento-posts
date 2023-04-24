@@ -114,7 +114,8 @@ while True:
     print(dias_de_post_Gabriella)
 
     for i in range(len(dias_de_post)+1):
-        print()
+        
+        print(dias_de_post[i-1])
 
     print(dias_de_post)
       
